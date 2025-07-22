@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    overflow: scroll;
+}
+
+#mapa-catalunya-3d {
+    width: 100%;
+    height: 90vh;
+}
+
+.grid-father {
+  display: grid;
+}
+
+.sidebar-buttons {
+    position: absolute;
+    width: 19rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+    overflow-y: auto;
+    max-height: calc(100vh - 6rem); 
+}
+
+
+
+.sidebar-buttons button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    margin-left: 1rem;
+    border-radius: 6px;
+    background-color: #3a4e795e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.sidebar-buttons button:hover {
+    background-color: #0056b3;
+}
