@@ -1,6 +1,5 @@
-body {
-    margin: 0;
-    overflow: scroll;
+body{
+    background-color: white;
 }
 
 #mapa-catalunya-3d {
@@ -9,6 +8,19 @@ body {
     position: relative; 
 }
 
+#text-info {
+    color: aliceblue;
+}
+
+#imatge-info {
+    max-width: 300px; 
+    display: none;
+}
+
+
+#desc-info {
+    color: aliceblue;
+}
 
 .grid-father {
     display: flex;
@@ -32,13 +44,14 @@ body {
 
 .sidebar-info {
     margin-right: .3rem;
-    position: absolute;
+    position: relative;
     width: 19rem;
     height: 89vh;
     right: 0;
     display: flex;
     flex-direction: column;
-    margin-top: .3rem;
+    margin-top: .1rem;
+    margin-left: 1rem;
     z-index: 10;
     overflow-y: auto;
     max-height: calc(100vh - 6rem); 
@@ -56,7 +69,8 @@ body {
     transition: background-color 0.2s ease;
 }
 
-.sidebar-info button {
+#boto-enllac {
+    display: none;
     padding: 10px 15px;
     font-size: 1rem;
     border: none;
